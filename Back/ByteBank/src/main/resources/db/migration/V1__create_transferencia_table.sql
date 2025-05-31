@@ -1,0 +1,6 @@
+CREATE TABLE transferencia (
+    id VARCHAR(36) NOT NULL PRIMARY KEY,
+    valor DECIMAL(10,2) NOT NULL,
+    destino VARCHAR(255) NOT NULL,
+    data DATETIME NOT NULL
+);
