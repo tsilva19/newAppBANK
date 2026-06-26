@@ -39,8 +39,8 @@ export class NovaTransferenciaComponent {
       },
       error: (error) => {
         console.error('Erro na transferência:', error);
-        if (error.status === 422 && error.error?.message) {
-          alert(error.error.message);
+        if (error.status === 422 && error.error?.erro) {
+          alert(error.error.erro);
         } else {
           alert('Ocorreu um erro inesperado ao realizar a transferência.');
         }
